@@ -1,7 +1,6 @@
-### 🖥️ Router (R1)
+Router 
 Router-on-a-stick configuration:
 
-```bash
 interface GigabitEthernet0/0
  no shutdown
 

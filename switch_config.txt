@@ -1,0 +1,46 @@
+SWITCH 1
+
+interface fa0/1 to router
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ switchport trunk allowed vlan 10,20,30
+
+interface fa0/8 to sw2
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ switchport trunk allowed vlan 10,20,30
+
+interface range f0/4,fa0/5
+ switchport mode access
+ switchport access vlan 10
+
+interface range f0/6,fa0/7
+ switchport mode access
+ switchport access vlan 20
+
+vlan 10
+ name ENGINEER
+vlan 20
+ name HR
+
+
+SWITCH 2
+
+
+interface fa0/3
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ switchport trunk allowed vlan 10,20,30
+
+interface range f0/4,fa0/5
+ switchport mode access
+ switchport access vlan 10
+
+interface range f0/1,fa0/2
+ switchport mode access
+ switchport access vlan 30
+
+vlan 10
+ name ENGINEER
+vlan 30
+ name SALES

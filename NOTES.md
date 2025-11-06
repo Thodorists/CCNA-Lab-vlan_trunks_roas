@@ -1,9 +1,3 @@
-
----
-
-## 📘 **notes.txt**
-
-```text
 Cisco Packet Tracer VLAN & Router-on-a-Stick Lab
 
 Σκοπός:
@@ -27,4 +21,4 @@ Cisco Packet Tracer VLAN & Router-on-a-Stick Lab
 - show ip interface brief
 - ping <ip address>
 
-Αν όλα λειτουργούν σωστά, το router θα δρομολογεί κανονικά μεταξύ VLANs.
+Το router δρομολογεί κανονικά μεταξύ VLANs.

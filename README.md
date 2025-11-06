@@ -17,23 +17,3 @@
 
 ---
 
-## ⚙️ Ρυθμίσεις
-
-### 🖥️ Router (R1)
-Router-on-a-stick configuration:
-
-```bash
-interface GigabitEthernet0/0
- no shutdown
-!
-interface GigabitEthernet0/0.10
- encapsulation dot1Q 10
- ip address 10.0.0.62 255.255.255.192
-!
-interface GigabitEthernet0/0.20
- encapsulation dot1Q 20
- ip address 10.0.0.126 255.255.255.192
-!
-interface GigabitEthernet0/0.30
- encapsulation dot1Q 30
- ip address 10.0.0.190 255.255.255.192
